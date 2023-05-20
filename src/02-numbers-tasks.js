@@ -7,7 +7,6 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-
 /**
  * Returns an area of a rectangle given by width and height.
  *
@@ -23,7 +22,6 @@ function getRectangleArea(width, height) {
   return width * height;
 }
 
-
 /**
  * Returns a circumference of circle given by radius.
  *
@@ -36,7 +34,7 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCircleCircumference(radius) {
-  return ((2) * (Math.PI) * (radius));
+  return 2 * Math.PI * radius;
 }
 
 /**
@@ -91,10 +89,9 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(/* a, b */) {
-  throw new Error('Not implemented');
+function getLinearEquationRoot(a, b) {
+  return -b / a;
 }
-
 
 /**
  * Returns an angle (in radians) between two vectors given by xi and yi,
@@ -135,7 +132,6 @@ function getLastDigit(value) {
   return Number(str[str.length - 1]);
 }
 
-
 /**
  * Returns a number by given string representation.
  *
@@ -165,9 +161,8 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelepipedDiagonal(a, b, c) {
-  return Math.sqrt((a ** 2) + (b ** 2) + (c ** 2));
+  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
 }
-
 
 /**
  * Returns the number rounded to specified power of 10.
@@ -191,7 +186,6 @@ function roundToPowerOfTen(num, pow) {
   const firstOperation = Math.round(num / myPow);
   return firstOperation * myPow;
 }
-
 
 /**
  * Returns true is the number is prime; otherwise false.
